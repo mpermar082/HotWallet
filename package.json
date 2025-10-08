@@ -1,26 +1,35 @@
 {
+    // Project metadata
     "name": "hotwallet",
     "version": "1.0.0",
     "description": "HotWallet - A TypeScript implementation",
     "main": "dist/index.js",
+    
+    // Scripts for building, running, testing, and cleaning the project
     "scripts": {
-        "build": "tsc",
-        "start": "node dist/index.js",
-        "dev": "ts-node src/index.ts",
-        "test": "jest",
-        "clean": "rm -rf dist"
+        "build": "tsc", // Compile TypeScript to JavaScript
+        "start": "node dist/index.js", // Run the compiled JavaScript
+        "dev": "ts-node src/index.ts", // Run the TypeScript source code
+        "test": "jest", // Run unit tests
+        "clean": "rm -rf dist" // Clean the compiled JavaScript directory
     },
+    
+    // Project author and license information
     "author": "mpermar082",
     "license": "MIT",
+    
+    // Project dependencies
     "dependencies": {
-        "minimist": "^1.2.0"
+        "minimist": "^1.2.0" // Command-line argument parser
     },
+    
+    // Project development dependencies
     "devDependencies": {
-        "typescript": "^5.0.0",
-        "@types/node": "^18.0.0",
-        "@types/minimist": "^1.2.0",
-        "ts-node": "^10.0.0",
-        "jest": "^29.0.0",
-        "@types/jest": "^29.0.0"
+        "typescript": "^5.0.0", // TypeScript compiler
+        "@types/node": "^18.0.0", // TypeScript definitions for Node.js
+        "@types/minimist": "^1.2.0", // TypeScript definitions for minimist
+        "ts-node": "^10.0.0", // TypeScript execution environment
+        "jest": "^29.0.0", // Unit testing framework
+        "@types/jest": "^29.0.0" // TypeScript definitions for Jest
     }
 }
