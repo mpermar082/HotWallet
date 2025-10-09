@@ -7,29 +7,52 @@
     
     // Scripts for building, running, testing, and cleaning the project
     "scripts": {
-        "build": "tsc", // Compile TypeScript to JavaScript
-        "start": "node dist/index.js", // Run the compiled JavaScript
-        "dev": "ts-node src/index.ts", // Run the TypeScript source code
-        "test": "jest", // Run unit tests
-        "clean": "rm -rf dist" // Clean the compiled JavaScript directory
+        // Compile TypeScript to JavaScript
+        "build": "tsc",
+        
+        // Run the compiled JavaScript
+        "start": "node dist/index.js",
+        
+        // Run the TypeScript source code in development mode
+        "dev": "ts-node src/index.ts",
+        
+        // Run unit tests
+        "test": "jest",
+        
+        // Clean the compiled JavaScript directory
+        "clean": "rm -rf dist"
     },
     
     // Project author and license information
-    "author": "mpermar082",
+    "author": {
+        "name": "mpermar082"
+    },
     "license": "MIT",
     
     // Project dependencies
     "dependencies": {
-        "minimist": "^1.2.0" // Command-line argument parser
+        // Command-line argument parser
+        "minimist": "^1.2.0"
     },
     
     // Project development dependencies
     "devDependencies": {
-        "typescript": "^5.0.0", // TypeScript compiler
-        "@types/node": "^18.0.0", // TypeScript definitions for Node.js
-        "@types/minimist": "^1.2.0", // TypeScript definitions for minimist
-        "ts-node": "^10.0.0", // TypeScript execution environment
-        "jest": "^29.0.0", // Unit testing framework
-        "@types/jest": "^29.0.0" // TypeScript definitions for Jest
+        // TypeScript compiler
+        "typescript": "^5.0.0",
+        
+        // TypeScript definitions for Node.js
+        "@types/node": "^18.0.0",
+        
+        // TypeScript definitions for minimist
+        "@types/minimist": "^1.2.0",
+        
+        // TypeScript execution environment
+        "ts-node": "^10.0.0",
+        
+        // Unit testing framework
+        "jest": "^29.0.0",
+        
+        // TypeScript definitions for Jest
+        "@types/jest": "^29.0.0"
     }
 }
